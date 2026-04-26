@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.carousel,
+.carousel-inner,
+.carousel-item{
+  height:100vh;
+}
+
+.carousel video{
+  height:100vh;
+  object-fit:cover;
+}
+
+.carousel-caption{
+  top:50%;
+  transform:translateY(-50%);
+  bottom:auto;
+}
+
+.carousel-caption h1{
+  font-size:60px;
+  font-weight:bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.carousel-caption p{
+  font-size:22px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container h2{
+  font-weight:700;
+  margin-bottom:15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container p{
+  font-size:18px;
+  color:white;
+  line-height:1.7;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container img{
+  height:350px;
+  width:100%;
+  object-fit:cover;
+}
+
+@media(max-width:768px){
+
+  .carousel,
+  .carousel-inner,
+  .carousel-item,
+  .carousel video{
+    height:70vh;
+  }
+
+  .carousel-caption h1{
+    font-size:32px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .carousel-caption p{
+    font-size:16px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .container img{
+    height:250px;
+  }
+
+}

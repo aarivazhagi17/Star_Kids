@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.footer-section{
+  width:100%;
+  margin:0;
+  padding:60px 0;
+  position:relative;
+  overflow:hidden;
+  background:transparent;
+}
+
+/* Remove Bootstrap Container Width */
+.footer-section .container-fluid{
+  width:100% !important;
+  max-width:100% !important;
+  padding-left:0 !important;
+  padding-right:0 !important;
+  margin:0 !important;
+}
+
+.footer-section .row{
+  padding-left:40px;
+  padding-right:40px;
+}
+
+.footer-link{
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-link:hover{
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+@media(max-width:768px){
+  .footer-section .row{
+    padding-left:20px;
+    padding-right:20px;
+  }
+}

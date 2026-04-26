@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.center-section {
+  background:transparent;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.center-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.center-text h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.center-text p {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .center-content {
+    height: 400px;
+  }
+
+  .center-text h1 {
+    font-size: 2.3rem;
+  }
+
+  .center-text p {
+    font-size: 1.2rem;
+  }
+}
+
+/*location ku*/
+
+.location-section{
+  background:transparent;
+  padding:60px 20px;
+}
+
+.location-box{
+  background:transparent;
+  border-radius:80px;
+  padding:60px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:40px;
+  position:relative;
+  overflow:hidden;
+}
+
+/* Left */
+.location-left{
+  flex:1;
+}
+
+.location-left h1{
+  font-size:3rem;
+  font-weight:400;
+  color:#e2dada;
+}
+
+.location-left h4{
+  color:#dee0e1;
+  font-size:1.4rem;
+  margin:20px 0;
+  font-weight:800;
+}
+
+.location-left p{
+  color:white;
+  font-size:1.5rem;
+  line-height:1.7;
+  max-width:600px;
+}
+
+/* Buttons */
+.location-buttons{
+  margin-top:30px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+}
+
+.location-buttons a{
+  text-decoration:none;
+  background:#f2c400;
+  color:#fff;
+  padding:15px 28px;
+  border-radius:40px;
+  font-size:1.1rem;
+  font-weight:700;
+  transition:0.3s;
+}
+
+.location-buttons a:hover{
+  background:#d9ac00;
+  transform:translateY(-3px);
+}
+
+/* Right */
+.location-right{
+  flex:1;
+  text-align:center;
+}
+
+.location-right img{
+  width:100%;
+  max-width:500px;
+  height:500px;
+  object-fit:cover;
+  border-radius:50%;
+}
+
+/* Mobile */
+@media(max-width:992px){
+  .location-box{
+    flex-direction:column;
+    text-align:center;
+    padding:40px 25px;
+  }
+
+  .location-left h1{
+    font-size:2.5rem;
+  }
+
+  .location-left p{
+    font-size:1.1rem;
+  }
+
+  .location-right img{
+    height:320px;
+    max-width:320px;
+  }
+
+  .location-buttons{
+    justify-content:center;
+  }
+}
+

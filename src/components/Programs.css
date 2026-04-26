@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.program-banner{
+  position:relative;
+  height:90vh;
+  overflow:hidden;
+}
+
+.banner-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.program-banner::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.45);
+}
+
+.banner-content{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+  color:#fff;
+  z-index:2;
+  width:80%;
+}
+
+.banner-content h1{
+  font-size:70px;
+  font-weight:bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.banner-content p{
+  font-size:24px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.program-card{
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  transition:0.4s;
+  height:100%;
+}
+
+.program-card:hover{
+  transform:translateY(-10px);
+}
+
+.program-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.program-card h3{
+  padding:15px 15px 5px;
+  font-weight:400;
+  font-family: 'Roboto', sans-serif;
+}
+
+.program-card p{
+  padding:0 15px 20px;
+  color:black;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media(max-width:768px){
+
+  .program-banner{
+    height:65vh;
+  }
+
+  .banner-content h1{
+    font-size:38px;
+  }
+
+  .banner-content p{
+    font-size:16px;
+  }
+
+}
