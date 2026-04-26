@@ -387,34 +387,11 @@ body{
   width:100%;
   min-height:100vh;
   padding:80px 7%;
-  background:linear-gradient(135deg,#2563eb,#7c3aed,#0ea5e9);
+  background:transparent;
   position:relative;
   overflow:hidden;
 }
 
-/* Bubble Background */
-.bottom-about-section::before,
-.bottom-about-section::after{
-  content:"";
-  position:absolute;
-  border-radius:50%;
-  background:rgba(255,255,255,0.10);
-  animation:floatBubble 8s ease-in-out infinite;
-}
-
-.bottom-about-section::before{
-  width:260px;
-  height:260px;
-  top:10%;
-  left:-70px;
-}
-
-.bottom-about-section::after{
-  width:220px;
-  height:220px;
-  bottom:10%;
-  right:-60px;
-}
 
 /* Left */
 .bottom-about-left h1{
