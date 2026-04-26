@@ -35,13 +35,7 @@ body{
 /* Overlay */
 .carousel-item{
   position:relative;
-  margin-top: 85px;
-}
-
-/* Caption */
-.carousel-caption{
-  z-index:2;
-  bottom:10%;
+  margin-top: 70px;
 }
 
 .carousel-caption h1{
