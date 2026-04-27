@@ -92,6 +92,7 @@ function Navbar() {
             <Link to="/blog">Blog</Link>
           </li>
 
+
         </ul>
       </div>
     </div>
