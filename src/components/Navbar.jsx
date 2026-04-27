@@ -92,10 +92,6 @@ function Navbar() {
             <Link to="/blog">Blog</Link>
           </li>
 
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-
         </ul>
       </div>
     </div>
