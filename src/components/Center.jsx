@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Center.css";
+import aos from "aos";
+import "aos/dist/aos.css";
 
 /* Baby Care */
 import Baby from "../Center/Baby.jpg";
@@ -7,6 +9,13 @@ import Location from "../Center/Location.jpg";
 
 import Footer from "./Footer";
 function Center() {
+
+  useEffect(() => {
+    aos.init({
+      duration: 2000,
+      once: false
+    });
+  }, []);
 
   const locations = {
     maduravoyal:
@@ -48,20 +57,20 @@ function Center() {
 
         {/* Left Content */}
         <div className="location-left">
-          <h1>LOCATE OUR CENTRES</h1>
+          <h1 data-aos="fade-down">LOCATE OUR CENTRES</h1>
 
-          <h4>
+          <h4 data-aos="fade-down">
             STAR KIDS IS A TRUSTED CHAIN OF PRESCHOOLS.
           </h4>
 
-          <p>
+          <p data-aos="fade-down">
             Star Kids has grown beautifully over the years and
             now we are present across Chennai in multiple
             locations for joyful learning.
           </p>
 
           <div className="location-buttons">
-            <a
+            <a data-aos="zoom-in-down"
               href={locations.maduravoyal}
               target="_blank"
               rel="noreferrer"
@@ -69,7 +78,7 @@ function Center() {
               Maduravoyal
             </a>
 
-            <a
+            <a data-aos="zoom-in-down"
               href={locations.valasaravakkam}
               target="_blank"
               rel="noreferrer"
@@ -77,7 +86,7 @@ function Center() {
               Valasaravakkam
             </a>
 
-            <a
+            <a data-aos="zoom-in-down"
               href={locations.alapakkam}
               target="_blank"
               rel="noreferrer"
@@ -89,7 +98,7 @@ function Center() {
 
         {/* Right Image */}
         <div className="location-right">
-          <img
+          <img data-aos="zoom-in"
             src={Location}
             alt="School"
           />

@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect} from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { useNavigate } from "react-router-dom";
+import aos from "aos";
+import "aos/dist/aos.css";
 import "./Home.css";
 
 /* Center */
@@ -25,6 +27,13 @@ import Contact from "./Contact";
 import Footer from "./Footer"
 function Home() {
 
+  useEffect(() => {
+    aos.init({
+      duration: 2000,
+      once: false
+    });
+  }, []);
+
     const navigate = useNavigate();
 
   return (
@@ -38,7 +47,7 @@ function Home() {
             <img className="d-block w-100 slider-img" src={Together} alt="" />
             <Carousel.Caption>
               <h1>Welcome To Star Kids</h1>
-              <p>Fun learning for every child</p>
+              <p >Fun learning for every child</p>
             </Carousel.Caption>
           </Carousel.Item>
 
@@ -74,30 +83,30 @@ function Home() {
 
   {/* Left Image */}
   <div className="about-left">
-    <img src={Together} alt="kids" />
+    <img data-aos="fade-zoom" src={Together} alt="kids" />
   </div>
 
   {/* Right Content */}
   <div className="about-right">
-    <h1>
+    <h1 data-aos="fade-down">
       STAR KIDS CENTERS ARE <br />
       DESIGNED TO BE A <br />
       HOME AWAY FROM HOME
     </h1>
 
-    <h3>
+    <h3 data-aos="fade-down">
       WHERE CHILDREN CAN LAUGH, GROW, HAVE FUN AND
       LEARN AT THEIR OWN PACE.
     </h3>
 
-    <p>
+    <p data-aos="fade-down">
       Everything about our centers reflects our understanding
       of children and their development. The center is set up
       to support your child's success and provide confidence
       and peace of mind.
     </p>
 
-    <button onClick={() => navigate("/center")}>
+    <button data-aos="fade-zoom" onClick={() => navigate("/center")}>
       CENTRES ❯
     </button>
   </div>
@@ -110,7 +119,7 @@ function Home() {
 <div className="program-section">
 
   {/* Play */}
-  <div className="program-card">
+  <div data-aos="fade-zoom" className="program-card">
     <img src={Play}  alt="Play" />
 
     <div className="program-overlay">
@@ -157,7 +166,7 @@ function Home() {
 
   <div className="row align-items-center">
 
-    <div className="col-lg-6 col-md-12 text-center">
+    <div data-aos="flip-left" className="col-lg-6 col-md-12 text-center">
       <img
         src={Table}
         alt="About"
@@ -166,19 +175,19 @@ function Home() {
     </div>
 
     <div className="col-lg-6 col-md-12 bottom-about-left">
-      <h1>ABOUT STAR KIDS</h1>
+      <h1 data-aos="fade-down">ABOUT STAR KIDS</h1>
 
-      <h3>
+      <h3 data-aos="fade-down">
         WHERE CHILDREN LEARN, PLAY AND GROW
       </h3>
 
-      <p>
+      <p data-aos="fade-down">
         Star Kids provides a joyful learning environment
         with activities, academic growth and playful
         experiences for every child.
       </p>
 
-      <button onClick={() => navigate("/about")}>
+      <button data-aos="fade-zoom" onClick={() => navigate("/about")}>
         ABOUT ❯
       </button>
     </div>
