@@ -26,7 +26,7 @@ function Center() {
             <p>
               Our mission is to help every child grow with confidence, curiosity, and kindness during their early learning years.
               <br />
-              SEED centers!
+              STAR centers!
             </p>
           </div>
         </div>

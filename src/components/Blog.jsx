@@ -6,6 +6,7 @@ import Reading from "../Blog/Reading.jpg";
 import Kids_Fitness from "../Blog/Kids_Fitness.jpg";
 import Art_Games from "../Blog/Art_Games.jpg";
 import Kids_Study from "../Blog/Kids_Study.jpg";
+import "./Blog.css";
 
 /* Video */
 import CVideo from "../video/CVideo.mp4";
@@ -35,7 +36,7 @@ function Blog() {
           <div className="blog-card">
             <img src={Healthy_Habits} className="img-fluid" alt="" />
             <h3>Healthy Sleep Routine</h3>
-            <p>Build bedtime habits for peaceful sleep and fresh mornings.</p>
+            <p>Build bedtime habits for peaceful sleep.</p>
           </div>
         </div>
 
