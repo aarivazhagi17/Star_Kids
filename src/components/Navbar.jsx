@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Star from "../Logo/Star.jpg";
+import Logo from "../Logo/Logo.jpg";
 import "./Navbar.css";
 
 function Navbar() {
@@ -17,8 +17,8 @@ function Navbar() {
 
         {/* Logo */}
         <span className="logo">
-          <img className="nav-image" src={Star} alt="" />
-          Star Kids
+          <img className="nav-image" src={Logo} alt="" />
+          Star Kidz
         </span>
 
         <div
