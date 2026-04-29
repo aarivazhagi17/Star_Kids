@@ -48,9 +48,9 @@
   transform:translateY(-3px);
 }
 
-.active{
-  background:#ffd700;
-  color:#000;
+.gallery-tabs .active{
+  background:#3f3f3f;
+  color:#fdfafa;
 }
 
 /* Images */
