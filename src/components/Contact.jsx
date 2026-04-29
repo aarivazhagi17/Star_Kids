@@ -22,7 +22,7 @@ function Contact() {
   ];
 
   const programs = [
-    "PLAY GROUP (2 to 3)", "NURSERY (3 to 4)", "LKG (4 to 5), UKG (5 to 6)"
+    "PLAY GROUP (2 to 3)", "NURSERY (3 to 4)", "LKG (4 to 5)", "UKG (5 to 6)"
   ];
 
 
