@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import Center from "./components/Center";
 import Programs from "./components/Programs";
 import About from "./components/About";
+import Gallery from "./components/Gallery";
 import Academic from "./components/Academic";
 import Games from "./components/Games";
 import Carerrs from "./components/Carerrs";
@@ -32,6 +33,7 @@ function App() {
         <Route path="/programs" element={<Programs/>}/>
         <Route path="/about" element={<About />} />
         <Route path="/academic" element={<Academic />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/games" element={<Games />} />
         <Route path="/carerrs" element={<Carerrs />} />
         <Route path="/blog" element={<Blog />} />
