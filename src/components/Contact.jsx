@@ -22,7 +22,7 @@ function Contact() {
   ];
 
   const programs = [
-    "Pre KG (2.5 to 3.5)", "LKG (3.5 to 4.5)", "UKG (4.5 to 5.5)"
+    "PLAY GROUP (2 to 3)", "NURSERY (3 to 4)", "LKG (4 to 5), UKG (5 to 6)"
   ];
 
 
