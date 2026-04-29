@@ -1,9 +1,9 @@
+// Contact.jsx
 import React, { useState } from "react";
 import axios from "axios";
 import "./Contact.css";
 
 function Contact() {
-
   const [formData, setFormData] = useState({
     parentName: "",
     childrenName: "",
@@ -22,14 +22,29 @@ function Contact() {
   ];
 
   const programs = [
-    "PLAY GROUP (2 to 3)", "NURSERY (3 to 4)", "LKG (4 to 5)", "UKG (5 to 6)"
+    "PLAY GROUP (2 to 3)",
+    "NURSERY (3 to 4)",
+    "LKG (4 to 5)",
+    "UKG (5 to 6)"
   ];
-
 
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    setFormData(prev => ({
+    // Only letters for names
+    if (
+      (name === "parentName" || name === "childrenName") &&
+      !/^[A-Za-z\s]*$/.test(value)
+    ) {
+      return;
+    }
+
+    // Only numbers for phone
+    if (name === "phoneNumber" && !/^[0-9]*$/.test(value)) {
+      return;
+    }
+
+    setFormData((prev) => ({
       ...prev,
       [name]: value
     }));
@@ -37,6 +52,18 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(formData.email)) {
+      alert("Enter Valid Email ID");
+      return;
+    }
+
+    if (formData.phoneNumber.length !== 10) {
+      alert("Phone Number must be exactly 10 digits");
+      return;
+    }
 
     try {
       await axios.post(
@@ -57,8 +84,7 @@ function Contact() {
       });
 
     } catch (error) {
-      console.log(error.response?.data);
-      console.log(error.message);
+      console.log(error);
       alert("Submission Failed");
     }
   };
@@ -92,7 +118,6 @@ function Contact() {
 
           <input
             type="email"
-
             name="email"
             placeholder="Email ID"
             value={formData.email}
@@ -103,10 +128,13 @@ function Contact() {
           <input
             type="tel"
             name="phoneNumber"
-
             placeholder="Phone Number"
             value={formData.phoneNumber}
             onChange={handleChange}
+            maxLength={10}
+            minLength={10}
+            pattern="[0-9]{10}"
+            title="Phone number must be exactly 10 digits"
             required
           />
 
@@ -134,7 +162,6 @@ function Contact() {
             {cities.map((city, index) => (
               <option key={index}>{city}</option>
             ))}
-
           </select>
 
           <textarea

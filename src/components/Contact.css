@@ -1,7 +1,10 @@
+/* Contact.css */
+
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
+  font-family:Arial, sans-serif;
 }
 
 .contact-page{
@@ -10,11 +13,13 @@
   justify-content:center;
   align-items:center;
   padding:40px 20px;
+ background: transparent;
 }
 
 .contact-box{
   width:100%;
   max-width:650px;
+  backdrop-filter:blur(12px);
   border-radius:25px;
   padding:35px;
 }
@@ -28,8 +33,9 @@
 
 .contact-box p{
   text-align:center;
-  color:#eee;
+  color:#f1f1f1;
   margin-bottom:25px;
+  font-size:16px;
 }
 
 form{
@@ -47,28 +53,19 @@ textarea{
   outline:none;
   border-radius:14px;
   font-size:16px;
+  background:#fff;
+  color:#333;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  box-shadow:0 0 0 3px rgba(255,255,255,0.35);
 }
 
 textarea{
   resize:none;
-}
-
-.check-box{
-  width:100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:12px;
-  color:#fff;
-  font-size:16px;
-  text-align:center;
-  margin:10px 0;
-}
-
-.check-box input{
-  width:18px;
-  height:18px;
-  margin:0;
+  min-height:110px;
 }
 
 button{
@@ -85,9 +82,11 @@ button{
 
 button:hover{
   transform:translateY(-3px);
+  background:#d4aa26;
   box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
 
+/* Tablet */
 @media(max-width:768px){
 
   .contact-box{
@@ -98,4 +97,53 @@ button:hover{
     font-size:30px;
   }
 
+  .contact-box p{
+    font-size:15px;
+  }
+
+  input,
+  select,
+  textarea{
+    font-size:15px;
+    padding:12px 14px;
+  }
+
+  button{
+    font-size:16px;
+    padding:12px;
+  }
+}
+
+/* Mobile */
+@media(max-width:480px){
+
+  .contact-page{
+    padding:20px 12px;
+  }
+
+  .contact-box{
+    padding:20px;
+    border-radius:18px;
+  }
+
+  .contact-box h1{
+    font-size:25px;
+  }
+
+  .contact-box p{
+    font-size:14px;
+  }
+
+  input,
+  select,
+  textarea{
+    font-size:14px;
+    padding:11px 12px;
+    border-radius:10px;
+  }
+
+  button{
+    font-size:15px;
+    border-radius:10px;
+  }
 }
