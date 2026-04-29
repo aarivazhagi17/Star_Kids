@@ -30,38 +30,38 @@ function Contact() {
     const { name, value } = e.target;
 
     setFormData(prev => ({
-  ...prev,
-  [name]: value
-}));
+      ...prev,
+      [name]: value
+    }));
   };
 
   const handleSubmit = async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  try {
-    await axios.post(
-      "http://localhost:5000/contact",
-      formData
-    );
+    try {
+      await axios.post(
+        `${import.meta.env.VITE_API_URL}/contact`,
+        formData
+      );
 
-    alert("Form Submitted Successfully");
+      alert("Form Submitted Successfully");
 
-    setFormData({
-      parentName: "",
-      childrenName: "",
-      email: "",
-      phoneNumber: "",
-      program: "",
-      centerCity: "",
-      message: "",
-    });
+      setFormData({
+        parentName: "",
+        childrenName: "",
+        email: "",
+        phoneNumber: "",
+        program: "",
+        centerCity: "",
+        message: "",
+      });
 
-  } catch (error) {
-    console.log(error.response?.data);
-    console.log(error.message);
-    alert("Submission Failed");
-  }
-};
+    } catch (error) {
+      console.log(error.response?.data);
+      console.log(error.message);
+      alert("Submission Failed");
+    }
+  };
 
   return (
     <div className="contact-page">
