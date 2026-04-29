@@ -83,17 +83,18 @@ function Footer() {
             </p>
 
             <p className="mb-0 mt-2">
-              Maduravoyal | Valasaravakkam | Alapakkam
+              Agaramthen
             </p>
 
             <p className="mb-0 mt-2">
               📞{" "}
-              <a href="tel:+919876543210" className="footer-link">
-                +91 98765 43210
-              </a>{" "}
+              <a href="tel:+919500092856" className="footer-link">
+                +91 95000 92856
+              </a> <span><a href="tel:+919944008221" className="footer-link">
+                +91 99440 08221</a></span>{" "}
               | ✉️{" "}
-              <a href="mailto:info@starkids.com" className="footer-link">
-                info@starkids.com
+              <a href="mailto:starkidzworldpreschool@gmail.com" className="footer-link">
+                starkidzworldpreschool@gmail.com
               </a>
             </p>
           </Col>

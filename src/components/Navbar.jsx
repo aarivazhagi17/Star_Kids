@@ -73,6 +73,7 @@ function Navbar() {
             {dropdown === "programs" && (
               <ul className="submenu">
                 <li><Link to="/academic">Academic</Link></li>
+                <li><Link to="/gallery">Gallery</Link></li>
               </ul>
             )}
           </li>
