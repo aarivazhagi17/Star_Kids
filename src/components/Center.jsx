@@ -8,6 +8,7 @@ import Baby from "../Center/Baby.jpg";
 import Location from "../Center/Location.jpg";
 
 import Footer from "./Footer";
+
 function Center() {
 
   useEffect(() => {
@@ -18,12 +19,7 @@ function Center() {
   }, []);
 
   const locations = {
-    maduravoyal:
-      "https://www.google.com/maps?q=Maduravoyal,+Chennai",
-    valasaravakkam:
-      "https://www.google.com/maps?q=Valasaravakkam,+Chennai",
-    alapakkam:
-      "https://www.google.com/maps?q=Alapakkam,+Chennai",
+    agaramthen: "https://www.google.com/maps?q=agaramthen,+Chennai",
   };
   
   return (
@@ -60,38 +56,22 @@ function Center() {
           <h1 data-aos="fade-down">LOCATE OUR CENTRES</h1>
 
           <h4 data-aos="fade-down">
-            STAR KIDS IS A TRUSTED CHAIN OF PRESCHOOLS.
+            STAR KIDZ IS A TRUSTED CHAIN OF PRESCHOOLS.
           </h4>
 
           <p data-aos="fade-down">
-            Star Kids has grown beautifully over the years and
+            Star Kidz has grown beautifully over the years and
             now we are present across Chennai in multiple
             locations for joyful learning.
           </p>
 
           <div className="location-buttons">
             <a data-aos="zoom-in-down"
-              href={locations.maduravoyal}
+              href={locations.agaramthen}
               target="_blank"
               rel="noreferrer"
             >
-              Maduravoyal
-            </a>
-
-            <a data-aos="zoom-in-down"
-              href={locations.valasaravakkam}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Valasaravakkam
-            </a>
-
-            <a data-aos="zoom-in-down"
-              href={locations.alapakkam}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Alapakkam
+              Agaramthen
             </a>
           </div>
         </div>

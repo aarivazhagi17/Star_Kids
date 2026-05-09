@@ -48,7 +48,7 @@ function Center() {
       <section className="about-details">
         <div className="about-container">
 
-          <h1 className="main-title" data-aos="fade-down">ABOUT STAR KIDS</h1>
+          <h1 className="main-title" data-aos="fade-down">ABOUT STAR KIDZ</h1>
 
           <div className="about-card">
             <h2 data-aos="fade-right">What We Offer</h2>
@@ -62,7 +62,7 @@ function Center() {
           </div>
 
           <div className="about-card">
-            <h2 data-aos="fade-right">Why Choose Star Kids?</h2>
+            <h2 data-aos="fade-right">Why Choose Star Kidz?</h2>
             <ul>
               <li data-aos="fade-right" data-aos-delay="1000">Experienced and loving teachers</li>
               <li data-aos="fade-right" data-aos-delay="1100">Modern teaching methods</li>
@@ -75,9 +75,7 @@ function Center() {
           <div className="about-card">
             <h2 data-aos="fade-right">Our Locations</h2>
             <ul>
-              <li data-aos="fade-right" data-aos-delay="1000">Maduravoyal</li>
-              <li data-aos="fade-right" data-aos-delay="1100">Valasaravakkam</li>
-              <li data-aos="fade-right" data-aos-delay="1200">Alapakkam</li>
+              <li data-aos="fade-right" data-aos-delay="1000">Agaramthen</li>
             </ul>
           </div>
 

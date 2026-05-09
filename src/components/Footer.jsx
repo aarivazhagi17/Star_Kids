@@ -9,37 +9,13 @@ function Footer() {
 
         <Row className="text-center mb-5">
           <Col>
-            <h1 className="fw-bold display-5">STAR KIDS</h1>
+            <h1 className="fw-bold display-5">STAR KIDZ</h1>
 
             <p className="text-light mt-3 fs-5">
               South India's trusted preschool chain for joyful learning,
               creativity and child development.
             </p>
           </Col>
-        </Row>
-
-        <Row className="text-center mb-5 g-4">
-
-          <Col xs={6} md={3}>
-            <h2 className="fw-bold text-warning">25+</h2>
-            <p>Branches</p>
-          </Col>
-
-          <Col xs={6} md={3}>
-            <h2 className="fw-bold text-warning">10k+</h2>
-            <p>Happy Kids</p>
-          </Col>
-
-          <Col xs={6} md={3}>
-            <h2 className="fw-bold text-warning">500+</h2>
-            <p>Teachers</p>
-          </Col>
-
-          <Col xs={6} md={3}>
-            <h2 className="fw-bold text-warning">15+</h2>
-            <p>Awards</p>
-          </Col>
-
         </Row>
 
         <Row className="text-center text-md-start g-4">
@@ -79,7 +55,7 @@ function Footer() {
         <Row>
           <Col className="text-center">
             <p className="mb-0">
-              © 2026 Star Kids Preschool. Nurturing Little Minds, Building Bright Futures.
+              © Star Kidz Preschool. Nurturing Little Minds, Building Bright Futures.
             </p>
 
             <p className="mb-0 mt-2">

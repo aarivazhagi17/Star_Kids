@@ -39,14 +39,13 @@ function Home() {
   return (
     <div className="home-page">
 
-      {/* Slider */}
       <div className="slider-wrapper">
         <Carousel fade controls indicators interval={3000}>
 
           <Carousel.Item>
             <img className="d-block w-100 slider-img" src={Together} alt="" />
             <Carousel.Caption>
-              <h1>Welcome To Star Kids</h1>
+              <h1>Welcome To Star Kidz</h1>
               <p >Fun learning for every child</p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -63,7 +62,7 @@ function Home() {
             <img className="d-block w-100 slider-img" src={Yoga} alt="" />
             <Carousel.Caption>
               <h1>Smart Education</h1>
-              <p>Modern skills for future kids</p>
+              <p>Modern skills for future kidz</p>
             </Carousel.Caption>
           </Carousel.Item>
 
@@ -89,7 +88,7 @@ function Home() {
   {/* Right Content */}
   <div className="about-right">
     <h1 data-aos="fade-down">
-      STAR KIDS CENTERS ARE <br />
+      STAR KIDZ CENTERS ARE <br />
       DESIGNED TO BE A <br />
       HOME AWAY FROM HOME
     </h1>
@@ -112,9 +111,6 @@ function Home() {
   </div>
 
 </div>
-
-
-{/* Programs Section - About கீழ add பண்ணு */}
 
 <div className="program-section">
 
@@ -175,14 +171,14 @@ function Home() {
     </div>
 
     <div className="col-lg-6 col-md-12 bottom-about-left">
-      <h1 data-aos="fade-down">ABOUT STAR KIDS</h1>
+      <h1 data-aos="fade-down">ABOUT STAR KIDZ</h1>
 
       <h3 data-aos="fade-down">
         WHERE CHILDREN LEARN, PLAY AND GROW
       </h3>
 
       <p data-aos="fade-down">
-        Star Kids provides a joyful learning environment
+        Star Kidz provides a joyful learning environment
         with activities, academic growth and playful
         experiences for every child.
       </p>

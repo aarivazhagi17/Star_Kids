@@ -7,7 +7,7 @@ function Academic() {
   const reviews = [
     {
       name: "Priya M",
-      text: "Star Kids has helped my child improve speaking and confidence. Excellent teachers!",
+      text: "Star Kidz has helped my child improve speaking and confidence. Excellent teachers!",
     },
     {
       name: "Mukil R",

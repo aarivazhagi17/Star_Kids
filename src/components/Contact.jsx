@@ -93,7 +93,7 @@ function Contact() {
       <div className="contact-box">
 
         <h1>Admission Form</h1>
-        <p>Apply for Star Kids Programs</p>
+        <p>Apply for Star Kidz Programs</p>
 
         <form onSubmit={handleSubmit}>
 

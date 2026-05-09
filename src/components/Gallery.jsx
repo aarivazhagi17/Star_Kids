@@ -16,8 +16,8 @@ import Activity2 from "../Gallery/Activity2.jpg";
 
     
 const galleryData = {
-  Activities: [Parents, Parents1, Parents2, Parents3, Parents4],
-  Events: [Activity, Activity1, Activity2],
+  Events: [Parents, Parents1, Parents2, Parents3, Parents4],
+  Activities: [Activity, Activity1, Activity2],
 };
 
 function Gallery() {
