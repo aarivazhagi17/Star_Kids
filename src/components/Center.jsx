@@ -19,7 +19,7 @@ function Center() {
   }, []);
 
   const locations = {
-    agaramthen: "https://www.google.com/maps/place/Agaramthen,+Tamil+Nadu+600127/@12.8465824,80.1225433,15z/data=!3m1!4b1!4m6!3m5!1s0x3a5258579ef5b7e5:0xf7432d9d32261af3!8m2!3d12.8430289!4d80.1304858!16s%2Fg%2F12hrzvf9p?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D",
+    agaramthen: "https://www.google.com/maps/place/Star+Kidz+World+Preschool/@12.884635,80.1494028,738m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3a5259bfd0f4d9a7:0x56809e9c9fec4d1b!8m2!3d12.8846298!4d80.1519777!16s%2Fg%2F11z5g0f3cm?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D",
   };
   
   return (

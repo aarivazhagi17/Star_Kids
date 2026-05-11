@@ -12,14 +12,6 @@ function Contact() {
     centerCity: "",
     message: "",
   });
-
-  const cities = [
-    "Chennai", "Tambaram", "Velachery", "Guindy", "Anna Nagar",
-    "T Nagar", "Porur", "Mylapore", "Adyar", "OMR",
-    "Medavakkam", "Sholinganallur", "Perungudi", "Ambattur",
-    "Avadi", "Poonamallee", "Mumbai", "Bangalore"
-  ];
-
   const programs = [
     "PLAY GROUP (2 to 3)",
     "NURSERY (3 to 4)",
@@ -147,19 +139,6 @@ function Contact() {
 
             {programs.map((program, index) => (
               <option key={index}>{program}</option>
-            ))}
-          </select>
-
-          <select
-            name="centerCity"
-            value={formData.centerCity}
-            onChange={handleChange}
-            required
-          >
-            <option value="">Select Center City</option>
-
-            {cities.map((city, index) => (
-              <option key={index}>{city}</option>
             ))}
           </select>
 
