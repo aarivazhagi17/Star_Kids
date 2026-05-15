@@ -23,15 +23,25 @@
 }
 
 .footer-link{
-  color: white;
+  color: rgb(240, 209, 8);
   text-decoration: none;
   font-weight: 500;
+  
 }
 
 .footer-link:hover{
   color: #ffd700;
   text-decoration: underline;
 }
+.footerlink{
+  color: rgb(8, 240, 232);
+  text-decoration: underline;
+  font-size: 13px;
+}
+.footerlink:hover{
+  color: #d4bf1e;
+}
+
 
 @media(max-width:768px){
   .footer-section .row{

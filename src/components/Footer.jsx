@@ -112,7 +112,7 @@ function Footer() {
                 href="https://kbssitsolutions.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="footer-link"
+                className="footerlink"
               >
                 KBSS IT Solutions
               </a>
