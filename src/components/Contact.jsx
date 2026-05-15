@@ -9,7 +9,6 @@ function Contact() {
     email: "",
     phoneNumber: "",
     program: "",
-    centerCity: "",
     message: "",
   });
   const programs = [
@@ -70,7 +69,6 @@ function Contact() {
         email: "",
         phoneNumber: "",
         program: "",
-        centerCity: "",
         message: "",
       });
 
